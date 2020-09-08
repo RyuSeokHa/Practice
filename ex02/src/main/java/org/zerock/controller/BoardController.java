@@ -30,6 +30,13 @@ public class BoardController {
 		model.addAttribute("list", service.getList());
 	}
 	
+	//화면 보기
+	@GetMapping("/register")
+	public void register() {
+		
+	}
+	
+	
 	//등록에 대한 처리
 	@PostMapping("/register")
 	public String register(BoardVO board, RedirectAttributes rttr) {
